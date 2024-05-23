@@ -51,8 +51,6 @@ This repository contains the source code for a stylish fashion e-commerce websit
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-`This markdown provides  a  structured and informative README for your fashion e-commerce website project.`
-
 ## Completed By
 
 - **Umair Dada:** [GitHub](https://github.com/umairdadaa)
