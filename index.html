@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/logo.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newarr">New Arrival</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collect">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#us">About Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-but" onclick="comingsoon()"
+              ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ></a>
+            <a class="nav-but" onclick="comingsoon()"
+              ><i class="fa fa-search" aria-hidden="true"></i
+            ></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="left">
+        <img src="assets/landing.svg" alt="" />
+      </div>
+
+      <div class="right">
+        <div class="rightin">
+          <h2>The Fall</h2>
+          <h3>Collection</h3>
+          <p>
+            Fashion plays an important role in people's lives. The way people
+            dress expresses their individuality and personality, and can
+            influence how others perceive them.
+          </p>
+          <button onclick="comingsoon()">Shop Now</button>
+          <a onclick="comingsoon()">Explore</a>
+        </div>
+      </div>
+    </section>
+    <!-- Sale Time -->
+    <section
+      class="sale d-flex align-items-center justify-content-between p-3 text-white fw-bolder"
+    >
+      <h4 class="m-0 ms-lg-5">Annual Sale Event</h4>
+      <div
+        class="time-units-container d-flex flex-grow-1 justify-content-center"
+      >
+        <div class="time-unit d-flex flex-column align-items-center">
+          <p class="m-0"><span id="days">0</span></p>
+          <p class="m-0">Days</p>
+        </div>
+        <div class="divider"></div>
+        <div class="time-unit d-flex flex-column align-items-center">
+          <p class="m-0"><span id="hours">0</span></p>
+          <p class="m-0">Hours</p>
+        </div>
+        <div class="time-unit d-flex flex-column align-items-center">
+          <p class="m-0"><span id="minutes">0</span></p>
+          <p class="m-0">Minutes</p>
+        </div>
+        <div class="time-unit d-flex flex-column align-items-center">
+          <p class="m-0"><span id="seconds">0</span></p>
+          <p class="m-0">Seconds</p>
+        </div>
+      </div>
+      <button class="btn btn-light" onclick="comingsoon()">Get notified</button>
+    </section>
+
+    <!-- New Arrival -->
+    <section class="newarrival" id="newarr">
+      <div class="headerarr">
+        <div class="text-containerarr">
+          <h2>New Arrival</h2>
+          <div class="textarr">
+            <p>The new collections of</p>
+            <p>2024 to best apparel</p>
+            <p>production</p>
+          </div>
+        </div>
+        <div class="button-containerarr">
+          <a onclick="comingsoon()"
+            ><img src="assets/arrowsquare.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="section-arr">
+        <div class="leftarr">
+          <img src="assets/leftarr.svg" alt="Centered Image" />
+          <div class="text-overlay">
+            <div class="title-price">
+              <h3>Suit</h3>
+              <span>56$</span>
+              <a onclick="comingsoon()"
+                ><img src="assets/arrow.svg" alt=""
+              /></a>
+            </div>
+            <p>Subtitle Stripes Pants Trousers Slim</p>
+          </div>
+        </div>
+        <div class="rightarr">
+          <div class="white-square">
+            <img src="assets/right1.svg" alt="Image 1" />
+          </div>
+          <div class="white-square">
+            <img src="assets/right2.svg" alt="Image 2" />
+          </div>
+          <div class="white-square">
+            <img src="assets/right3.svg" alt="Image 3" />
+          </div>
+          <div class="white-square">
+            <img src="assets/right4.svg" alt="Image 4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="collections" id="collect">
+      <h2 class="collections-heading">Collections</h2>
+      <h3 class="top-products">Top Products</h3>
+      <ul class="product-list">
+        <li onclick="comingsoon()" class="active">All Products</li>
+        <li onclick="comingsoon()">Bags</li>
+        <li onclick="comingsoon()">Suits</li>
+        <li onclick="comingsoon()">Pants</li>
+        <li onclick="comingsoon()">Shirts</li>
+      </ul>
+      <div class="product-cards">
+        <div class="product-card active">
+          <img
+            src="assets/collections/1.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #45331d"></span>
+            <span class="color-circle" style="background-color: #855b1c"></span>
+            <span class="color-circle" style="background-color: #e8c96d"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="assets/collections/2.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #e8c96d"></span>
+            <span class="color-circle" style="background-color: #445093"></span>
+            <span class="color-circle" style="background-color: #246613"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="assets/collections/3.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #c79163"></span>
+            <span class="color-circle" style="background-color: #dcd2c3"></span>
+            <span class="color-circle" style="background-color: #9a8852"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="view-more">
+          <a class="view-more-btn" onclick="comingsoon()">
+            <span>View More</span>
+            <img src="assets/arrowsquare.svg" alt="" />
+          </a>
+        </div>
+        <div class="product-card active">
+          <img
+            src="assets/collections/4.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #c9bca9"></span>
+            <span class="color-circle" style="background-color: #9a8852"></span>
+            <span class="color-circle" style="background-color: #e8c96d"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="assets/collections/5.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #e8c96d"></span>
+            <span class="color-circle" style="background-color: #6b6b6b"></span>
+            <span class="color-circle" style="background-color: #d3c0b2"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="assets/collections/6.svg"
+            alt="Product Image"
+            class="product-image"
+          />
+          <h3 class="product-heading">Harper's Bazaar Suit</h3>
+          <div class="rating">
+            <span class="stars">★ ★ ★ ★ ★</span>
+            <span class="rating-count">(1000)</span>
+          </div>
+
+          <p class="product-price">$523</p>
+          <div class="color-selection">
+            <p class="color-label">3 Colors</p>
+            <span class="color-circle" style="background-color: #c79163"></span>
+            <span class="color-circle" style="background-color: #dcd2c3"></span>
+            <span class="color-circle" style="background-color: #9a8852"></span>
+          </div>
+          <button class="order-now" onclick="comingsoon()">Order Now</button>
+        </div>
+        <div class="view-more">
+          <a class="view-more-btn" onclick="comingsoon()">
+            <span>View More</span>
+            <img src="assets/arrowsquare.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers Email -->
+    <section class="special-offers" id="us">
+      <h1>Special offers and free giveaways?</h1>
+      <h2>Tap your email down below and get new notifications about Fashion</h2>
+      <div class="email-input-container">
+        <input type="email" placeholder="Add your email here" id="email" />
+        <button type="submit" onclick="comingsoon()">Submit</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="thefooter">
+      <div class="footer">
+        <div class="footer-column">
+          <h3>Products</h3>
+          <ul>
+            <li><a onclick="comingsoon()" href="#">Shoes</a></li>
+            <li><a onclick="comingsoon()" href="#">Bags</a></li>
+            <li><a onclick="comingsoon()" href="#">Suits</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Category</h3>
+          <ul>
+            <li><a onclick="comingsoon()" href="#">Men</a></li>
+            <li><a onclick="comingsoon()" href="#">New In</a></li>
+            <li><a onclick="comingsoon()" href="#">Weekly Pick</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company Info</h3>
+          <ul>
+            <li><a onclick="comingsoon()" href="#">About us</a></li>
+            <li><a onclick="comingsoon()" href="#">Contact us</a></li>
+            <li><a onclick="comingsoon()" href="#">Payment Options</a></li>
+            <li><a onclick="comingsoon()" href="#">Track Order</a></li>
+            <li><a onclick="comingsoon()" href="#">Support</a></li>
+            <li><a onclick="comingsoon()" href="#">Vouchers</a></li>
+            <li><a onclick="comingsoon()" href="#">Size Charts</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a onclick="comingsoon()" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a onclick="comingsoon()" href="#"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a onclick="comingsoon()" href="#"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a onclick="comingsoon()" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a onclick="comingsoon()" href="#">Data settings</a>
+        <a onclick="comingsoon()" href="#">Cookie settings</a>
+        <a onclick="comingsoon()" href="#">Privacy Policy</a>
+        <a onclick="comingsoon()" href="#">Terms And Conditions</a>
+        <a onclick="comingsoon()" href="#">Imprint</a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
